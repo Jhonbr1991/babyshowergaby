@@ -1,534 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Baby Shower de Gabriela Eloísa — Lista de Regalos</title>
-<meta name="theme-color" content="#f8c7de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dominio, Deseo y Amor — Devocional</title>
+<meta name="theme-color" content="#d6b97e">
 <style>
   :root {
-    --rosa:#f8c7de;
-    --rosa-osc:#e38db7;
-    --fucsia:#d43f8d;
-    --malva:#ffeef6;
-    --gris:#6b7280;
-    --verde:#10b981;
+    --fondo: #f6f3ed;
+    --texto: #141414;
+    --dorado: #d6b97e;
   }
-  * { box-sizing:border-box; }
   body {
-    margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-    color:#1f2937; background:linear-gradient(180deg, var(--malva), white 40%);
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    background: var(--fondo);
+    color: var(--texto);
+    line-height: 1.6;
+    padding: 24px;
   }
   header {
-    text-align:center; padding: 42px 16px 24px;
-    background:
-      radial-gradient(80px 80px at 10% 20%, rgba(255,255,255,.7), transparent 60%),
-      radial-gradient(100px 100px at 90% 10%, rgba(255,255,255,.7), transparent 60%),
-      linear-gradient(180deg, var(--rosa), #ffd7eb);
-    color:#4b2142;
-    position:relative;
+    border-top: 4px solid var(--dorado);
+    text-align: center;
+    padding-top: 20px;
   }
-  header h1 { font-size: clamp(28px, 3vw, 40px); margin:0 0 6px; letter-spacing:.5px; }
-  header p { margin:6px 0 0; font-size: 16px; color:#4b2142; }
-  .card { width:min(900px, 92%); margin: -28px auto 40px; background:white;
-          border-radius: 22px; box-shadow: 0 12px 30px rgba(212,63,141,.15);
-          padding: 18px 18px 8px; border: 2px solid #ffd7eb; }
-  .intro { background: #fff6fb; border:1px dashed var(--rosa-osc); padding:14px 16px; border-radius:16px; margin: 10px 0 18px; }
-  .intro b { color:#84284e; }
-  .row { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:12px; margin: 10px 0 18px; }
-  .item { border:1px solid #f5c5dd; border-radius:16px; padding:12px 12px 10px; background:linear-gradient(180deg, #fff, #fff9fc); }
-  .item h3 { font-size:16px; margin:0 0 6px; color:#7a214e; }
-  .tag { display:inline-block; font-size:12px; padding:2px 8px; border-radius:999px; background:#ffe3f2; color:#7a214e; border:1px solid #ffd1ea; }
-  .desc { font-size:13px; color:var(--gris); margin:6px 0 10px; min-height: 34px; }
-  .controls { display:flex; gap:8px; flex-wrap:wrap; }
-  button, .ghost { border-radius:12px; padding:8px 10px; font-weight:600; border:2px solid var(--rosa-osc);
-                    background: white; color:#7a214e; cursor:pointer; transition: transform .06s ease, box-shadow .15s ease, background .2s; }
-  button:hover { transform: translateY(-1px); box-shadow:0 6px 16px rgba(212,63,141,.18); }
-  .primary { background: var(--rosa-osc); color:white; border-color: var(--fucsia); }
-  .primary:hover { background: var(--fucsia); }
-  .ok { border-color: var(--verde); color:#065f46; }
-  .ok:hover { background:#ecfdf5; }
-  .muted { border-color:#e5e7eb; color:#374151; }
-  .flex { display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:space-between; }
-  .hint { color:var(--gris); font-size:12px; }
-  footer { text-align:center; color:var(--gris); padding: 8px 0 24px; font-size:12px; }
-  .divider { height:1px; background:linear-gradient(90deg, transparent, #ffd7eb, transparent); margin:14px 0; }
-  .pill { padding:8px 12px; background:#fff0f7; border:1px solid #ffd5ea; border-radius:999px; font-size:13px; color:#7a214e; }
-  .verse { font-style:italic; font-size:14px; color:#6b214d; }
-  .topbar { display:flex; gap:8px; flex-wrap:wrap; align-items:center; justify-content:center; margin-top: 8px; }
-  .copy-area { display:none; }
-  .banner {text-align:center; padding:10px 0; margin-bottom:6px;}
-  .banner span {background:#fff0f7; border:1px solid #ffd5ea; border-radius:999px; padding:6px 10px; font-size:12px; color:#7a214e;}
-  .place { display:flex; gap:6px; flex-wrap:wrap; justify-content:center; margin-top:8px; }
+  h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: var(--texto);
+    margin-top: 32px;
+  }
+  h1 {
+    font-size: 2.2em;
+    letter-spacing: 1px;
+  }
+  h2 {
+    color: var(--dorado);
+    font-size: 1.3em;
+  }
+  p {
+    margin: 14px 0;
+    text-align: justify;
+  }
+  .lema {
+    font-style: italic;
+    color: var(--texto);
+    text-align: center;
+    margin: 10px 0 30px 0;
+  }
+  .seccion {
+    margin: 50px 0;
+    border-top: 1px solid var(--dorado);
+    padding-top: 30px;
+  }
+  .versiculo {
+    font-style: italic;
+    color: var(--dorado);
+    text-align: center;
+  }
+  .practica {
+    background: rgba(214,185,126,0.15);
+    border-left: 4px solid var(--dorado);
+    padding: 16px;
+    margin-top: 20px;
+  }
+  footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #6b6b6b;
+    margin-top: 50px;
+    border-top: 2px solid var(--dorado);
+    padding-top: 12px;
+  }
+  .cruz {
+    text-align: center;
+    color: var(--dorado);
+    font-size: 1.4em;
+    margin-top: 20px;
+  }
 </style>
 </head>
 <body>
+
 <header>
-  <h1>Baby Shower de Gabriela Eloísa</h1>
-  <p class="verse">“¿Y quién sabe si para esta hora has llegado al reino?” — Ester 4:14</p>
-  <div class="topbar">
-    <span class="pill">Fecha: 08 de octubre de 2025</span>
-    <span class="pill">Hora: 1:30 p.m.</span>
-    <span class="pill">Tema: Esther</span>
-    <span class="pill">Sin código de vestimenta</span>
-  </div>
-  <div class="place">
-    <span class="pill">Lugar: Av. Amazonas N47-279 y Río Palora. Sector Labrador</span>
-  </div>
+  <h1>DOMINIO, DESEO Y AMOR</h1>
+  <h2>Guía devocional de 4 semanas para hombres casados</h2>
+  <p class="lema">“Transforma tu deseo en propósito”</p>
+  <p><strong>Jonathan Rocha Silva</strong><br>
+  Pastor de la Iglesia Transcultural en Ecuador<br>
+  Quito — 2025</p>
 </header>
 
-<main class="card">
-  <div class="intro">
-    <p><b>¡Gracias por celebrar con nosotros!</b> Escoge un regalo de la lista. Puedes marcarlo como “reservado” para evitar duplicados y compartir tu elección por WhatsApp.</p>
+<section class="seccion">
+  <h3>Dedicatoria</h3>
+  <p>A mi esposa <strong>Mishell Pavón</strong>, mi compañera, inspiración y ayuda idónea.
+  Gracias por mostrarme cada día que el amor con propósito es posible.</p>
+</section>
+
+<section class="seccion">
+  <h3>Introducción</h3>
+  <p>El deseo no es tu enemigo; fue Dios quien lo puso en ti. El problema no es sentir, sino 
+  no saber qué hacer con lo que sientes.</p>
+  <p>Este devocional te ayudará a redirigir tu deseo hacia el propósito de Dios, aprendiendo a vivir con dominio propio, amor genuino y pasión redimida.</p>
+</section>
+
+<section class="seccion">
+  <h3>Semana 1 — El origen del deseo</h3>
+  <p class="versiculo">“Y dijo Dios: No es bueno que el hombre esté solo; le haré ayuda idónea para él.” — Génesis 2:18</p>
+  <p>El deseo nace del diseño. Dios creó al hombre con la necesidad de relacionarse, de compartir y de amar. 
+  Tu deseo no te aleja de Dios; te recuerda que fuiste hecho para el amor. 
+  Cuando ese deseo se rinde a Cristo, deja de ser impulso y se convierte en propósito.</p>
+  <div class="practica">
+    <strong>Práctica:</strong><br>
+    • Ora cada día pidiendo que Dios te enseñe a amar como Él ama.<br>
+    • Haz algo concreto para servir a tu esposa, no solo para complacerla.
   </div>
+</section>
 
-  <div class="flex">
-    <div class="hint">Tip: toca “Reservar” para marcarlo en tu dispositivo.</div>
-    <div>
-      <a class="primary" id="whatsappRSVP" target="_blank" rel="noopener">Confirmar asistencia (WhatsApp)</a>
-      <a class="ghost" id="mapLink" target="_blank" rel="noopener">Ver mapa</a>
-    </div>
+<section class="seccion">
+  <h3>Semana 2 — Domina sin reprimir</h3>
+  <p class="versiculo">“El espíritu del profeta se sujeta al profeta.” — 1 Corintios 14:32</p>
+  <p>Dios no quiere que apagues tu fuego, sino que lo gobiernes. 
+  El dominio propio no es frialdad, es fuerza canalizada. 
+  Cuando el hombre gobierna su deseo, su amor se vuelve más profundo y estable. 
+  La represión enferma, pero el dominio redime.</p>
+  <div class="practica">
+    <strong>Práctica:</strong><br>
+    • Identifica tus detonantes (situaciones o pensamientos que alteran tu paz).<br>
+    • Cada vez que aparezcan, respira, ora y somételos al Espíritu Santo.
   </div>
+</section>
 
-  <div class="divider"></div>
+<section class="seccion">
+  <h3>Semana 3 — El lenguaje del amor redimido</h3>
+  <p class="versiculo">“Maridos, amad a vuestras mujeres, así como Cristo amó a la iglesia.” — Efesios 5:25</p>
+  <p>El amor redimido no es egoísta, sino expresivo y empático. 
+  Dios te llama a comunicar amor con palabras, gestos y actos concretos. 
+  El silencio, la indiferencia o la dureza hieren más que los errores visibles. 
+  Habla vida, expresa afecto, y recuerda que la intimidad también es espiritual.</p>
+  <div class="practica">
+    <strong>Práctica:</strong><br>
+    • Di cada día una palabra de afirmación a tu esposa.<br>
+    • Pregúntale cómo puedes amarle mejor esta semana.
+  </div>
+</section>
 
-  <section id="grid" class="row">
-    
-    <article class="item" data-key="it0">
-      <h3>Pañales RN/0 (pack)</h3>
-      <span class="tag">Higiene</span>
-      <p class="desc">Hipoalergénicos.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it0">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it0">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it0">Copiar</button>
-      </div>
-    </article>
-    
+<section class="seccion">
+  <h3>Semana 4 — Deseo y propósito</h3>
+  <p class="versiculo">“Deléitate a sí mismo en Jehová, y Él te concederá las peticiones de tu corazón.” — Salmos 37:4</p>
+  <p>Cuando tu placer está en Dios, tu deseo se alinea con su voluntad. 
+  Ya no buscas solo satisfacción, sino significado. 
+  Tu cuerpo, tus pensamientos y tus emociones pueden ser instrumentos de adoración. 
+  Dios no te pide perfección, sino entrega. 
+  El dominio propio no se logra con fuerza humana, sino con dependencia del Espíritu.</p>
+  <div class="practica">
+    <strong>Práctica:</strong><br>
+    • Dedica un tiempo íntimo con tu esposa en oración y gratitud.<br>
+    • Agradece juntos a Dios por su fidelidad en su relación.
+  </div>
+</section>
 
-    <article class="item" data-key="it1">
-      <h3>Pañales RN/0 (pack) — Extra 1</h3>
-      <span class="tag">Higiene</span>
-      <p class="desc">Prioridad alta (recién nacidos).</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it1">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it1">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it1">Copiar</button>
-      </div>
-    </article>
-    
+<section class="seccion">
+  <h3>Cierre</h3>
+  <p>El amor verdadero no se basa en instinto, sino en propósito. 
+  No es pasividad, sino pasión con dirección. 
+  Cuando el hombre aprende a dominar su deseo bajo la guía del Espíritu, 
+  su matrimonio se convierte en testimonio vivo del amor de Cristo por su Iglesia.</p>
+  <p class="cruz">✝️</p>
+  <p style="text-align:center;"><em>A Él sea la gloria por medio de nuestra obediencia y excelencia.</em></p>
+</section>
 
-    <article class="item" data-key="it2">
-      <h3>Pañales RN/0 (pack) — Extra 2</h3>
-      <span class="tag">Higiene</span>
-      <p class="desc">Prioridad alta (recién nacidos).</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it2">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it2">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it2">Copiar</button>
-      </div>
-    </article>
-    
+<footer>
+  <p><strong>Jonathan Rocha Silva</strong><br>
+  Pastor de la Iglesia Transcultural en Ecuador<br>
+  Quito — 2025</p>
+</footer>
 
-    <article class="item" data-key="it3">
-      <h3>Pañales Talla 1 (pack)</h3>
-      <span class="tag">Higiene</span>
-      <p class="desc">Para usar al mes 1–2.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it3">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it3">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it3">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it4">
-      <h3>Pañales Talla 1 (pack) — Extra</h3>
-      <span class="tag">Higiene</span>
-      <p class="desc">Stock adicional.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it4">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it4">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it4">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it5">
-      <h3>Pañales Talla 2 (pack)</h3>
-      <span class="tag">Higiene</span>
-      <p class="desc">Para meses 3–4.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it5">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it5">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it5">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it6">
-      <h3>Pañales Talla 3 (pack)</h3>
-      <span class="tag">Higiene</span>
-      <p class="desc">Para meses 5–6.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it6">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it6">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it6">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it7">
-      <h3>Pañales Talla 4 (pack)</h3>
-      <span class="tag">Higiene</span>
-      <p class="desc">Para meses 7–9.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it7">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it7">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it7">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it8">
-      <h3>Toallitas húmedas (x6)</h3>
-      <span class="tag">Higiene</span>
-      <p class="desc">Sin fragancia, para piel sensible.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it8">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it8">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it8">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it9">
-      <h3>Crema anti-rozaduras</h3>
-      <span class="tag">Higiene</span>
-      <p class="desc">Con óxido de zinc.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it9">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it9">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it9">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it10">
-      <h3>Shampoo & jabón neutro bebé</h3>
-      <span class="tag">Baño</span>
-      <p class="desc">pH suave, hipoalergénico.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it10">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it10">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it10">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it11">
-      <h3>Bañera para bebé</h3>
-      <span class="tag">Baño</span>
-      <p class="desc">Con soporte antideslizante.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it11">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it11">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it11">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it12">
-      <h3>Toallas con capucha (x2)</h3>
-      <span class="tag">Baño</span>
-      <p class="desc">Algodón suave.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it12">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it12">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it12">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it13">
-      <h3>Manta/Swaddle muselina (x3)</h3>
-      <span class="tag">Ropa & Ropa de cama</span>
-      <p class="desc">Ligera para envolver.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it13">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it13">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it13">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it14">
-      <h3>Mantitas afelpadas (x2)</h3>
-      <span class="tag">Ropa & Ropa de cama</span>
-      <p class="desc">Para abrigo.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it14">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it14">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it14">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it15">
-      <h3>Babitas / Paños de eructo (x6)</h3>
-      <span class="tag">Ropa & Ropa de cama</span>
-      <p class="desc">Absorbentes.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it15">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it15">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it15">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it16">
-      <h3>Bodys manga corta 0–3m (x5)</h3>
-      <span class="tag">Ropa</span>
-      <p class="desc">Algodón 100%.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it16">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it16">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it16">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it17">
-      <h3>Bodys manga larga 3–6m (x5)</h3>
-      <span class="tag">Ropa</span>
-      <p class="desc">Para clima fresco.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it17">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it17">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it17">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it18">
-      <h3>Pijamas enterizas 0–3m (x4)</h3>
-      <span class="tag">Ropa</span>
-      <p class="desc">Con broches.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it18">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it18">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it18">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it19">
-      <h3>Medias y mitones (x6)</h3>
-      <span class="tag">Ropa</span>
-      <p class="desc">Protegen del frío y rasguños.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it19">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it19">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it19">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it20">
-      <h3>Gorritos algodón (x3)</h3>
-      <span class="tag">Ropa</span>
-      <p class="desc">Recién nacida.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it20">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it20">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it20">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it21">
-      <h3>Baberos (x6)</h3>
-      <span class="tag">Alimentación</span>
-      <p class="desc">Para leche y babeo.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it21">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it21">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it21">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it22">
-      <h3>Biberones anticólicos (set)</h3>
-      <span class="tag">Alimentación</span>
-      <p class="desc">2–4 unidades, 120–240 ml.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it22">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it22">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it22">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it23">
-      <h3>Esterilizador micro/eléctrico</h3>
-      <span class="tag">Alimentación</span>
-      <p class="desc">Opcional.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it23">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it23">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it23">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it24">
-      <h3>Calienta biberones</h3>
-      <span class="tag">Alimentación</span>
-      <p class="desc">Opcional.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it24">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it24">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it24">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it25">
-      <h3>Chupón + clip (x2)</h3>
-      <span class="tag">Confort</span>
-      <p class="desc">Silicona grado médico.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it25">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it25">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it25">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it26">
-      <h3>Cojín de lactancia</h3>
-      <span class="tag">Lactancia</span>
-      <p class="desc">Ergonómico.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it26">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it26">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it26">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it27">
-      <h3>Discos protectores lactancia</h3>
-      <span class="tag">Lactancia</span>
-      <p class="desc">Reutilizables o desechables.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it27">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it27">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it27">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it28">
-      <h3>Bolsas para leche materna</h3>
-      <span class="tag">Lactancia</span>
-      <p class="desc">Para congelar/guardar.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it28">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it28">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it28">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it29">
-      <h3>Detergente para bebé</h3>
-      <span class="tag">Limpieza</span>
-      <p class="desc">Hipoalergénico.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it29">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it29">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it29">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it30">
-      <h3>Cambiador portátil</h3>
-      <span class="tag">Paseo & Cambio</span>
-      <p class="desc">Para salidas.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it30">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it30">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it30">Copiar</button>
-      </div>
-    </article>
-    
-
-    <article class="item" data-key="it31">
-      <h3>Colchita y sábanas para cuna (juego)</h3>
-      <span class="tag">Ropa de cama</span>
-      <p class="desc">Extras siempre útiles.</p>
-      <div class="controls">
-        <button class="primary" data-act="wa" data-id="it31">Reservar</button>
-        <button class="ok" data-act="toggle" data-id="it31">Marcar reservado</button>
-        <button class="muted" data-act="copy" data-id="it31">Copiar</button>
-      </div>
-    </article>
-    
-  </section>
-
-  <div class="divider"></div>
-  <div class="banner"><span>Hecho con amor para <b>Gabriela Eloísa</b>. Última actualización: 03/10/2025</span></div>
-  <footer>
-    <span class="hint">La marca “Reservado” se guarda solo en tu dispositivo (LocalStorage). Esta página funciona sin internet.</span>
-  </footer>
-</main>
-
-<script>
-// Enhance: reserved toggle & share per item (progressive enhancement)
-document.addEventListener('click', (e) => {
-  const btn = e.target.closest('button');
-  if(!btn) return;
-  const act = btn.dataset.act;
-  const id = btn.dataset.id;
-  if(!act || !id) return;
-  if(act === 'toggle') {
-    const key = 'reserve_'+id;
-    const v = localStorage.getItem(key) === '1' ? '0' : '1';
-    localStorage.setItem(key, v);
-    // Update button label
-    btn.textContent = (v === '1') ? '✓ Reservado' : 'Marcar reservado';
-  } else if(act === 'copy') {
-    const card = document.querySelector(`[data-key="${id}"]`);
-    const title = card.querySelector('h3').textContent.trim();
-    const note = card.querySelector('.desc').textContent.trim();
-    navigator.clipboard.writeText(`${title} — ${note}`);
-    btn.textContent = 'Copiado';
-    setTimeout(() => btn.textContent = 'Copiar', 1200);
-  } else if(act === 'wa') {
-    const card = document.querySelector(`[data-key="${id}"]`);
-    const title = card.querySelector('h3').textContent.trim();
-    const note = card.querySelector('.desc').textContent.trim();
-    const msg = encodeURIComponent(`Hola 👋 Quiero reservar este regalo para el baby shower de Gabriela Eloísa:\n- ${title} (nota: ${note})`);
-    window.open('https://wa.me/?text='+msg, '_blank');
-  }
-});
-
-// RSVP and Map buttons
-(function setupExtras(){
-  const rsvp = document.getElementById('whatsappRSVP');
-  if (rsvp) {
-    const msg = encodeURIComponent(`Hola 👋 Confirmo mi asistencia al baby shower de Gabriela Eloísa el 08 de octubre de 2025 a la 1:30 p.m. en Av. Amazonas N47-279 y Río Palora. Sector Labrador. (Sin código de vestimenta)`);
-    rsvp.href = 'https://wa.me/593983379301?text=' + msg;
-  }
-  const map = document.getElementById('mapLink');
-  if (map) {
-    const q = encodeURIComponent('Av. Amazonas N47-279 y Río Palora. Sector Labrador');
-    map.href = 'https://www.google.com/maps/search/?api=1&query=' + q;
-  }
-})();
-</script>
 </body>
 </html>
